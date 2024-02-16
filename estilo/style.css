@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Protest+Guerrilla&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;          /*Fonte padrão*/
+    --fonte2: 'Kalam', cursive;                             /*Fonte conteúdo*/
+    --fonte3: 'Protest Guerrilla', sans-serif;              /*Fonte título*/
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+html, body{
+    background-color: darkgray;
+    min-height:100vh;
+    font-family: var(--fonte1);
+    
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top:50px;
+    font-variant:small-caps;
+    font-family: var(--fonte3);
+    font-weight: normal;
+    font-size: 8vw;
+}
+
+header > p{
+    padding-bottom:50px;
+   
+}
+header a, footer a{
+    color: white;
+    text-decoration:none;
+    font-weight:bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration:underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    line-height:2.2em;
+    padding-left:40px;
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom:2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: #1e3333;
+    color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.474);
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.375);
+   display:inline-block;
+    padding-left: 5px;
+    padding-right:5px;
+    text-shadow: 1px 1px 6px black;
+}
+section#img01{
+    background: url('../imagens/background001.jpg') right center/ cover fixed;
+}
+section#img02{
+    background: url('../imagens/background002.jpg') right center/ cover fixed;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:10px;
+}
